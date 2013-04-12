@@ -1,0 +1,24 @@
+<body ng-controller="MarsRobotsCtrl">
+
+<form ng-submit="createPlanet(max_x,max_y)">
+	Input Planet Max X Size <input ng-model = "max_x"> 
+	Input Planet Max Y Size <input ng-model = "max_y"> 
+	<input type="submit" id="submit" value="Submit"/>
+</form>
+	maximum x : {{planet_max_x}}
+<br>
+<br>
+	maximum y : {{planet_max_y}}
+<br>
+<br>
+<button ng-click="addRobotForm()">Add Robot</button>
+<form ng-repeat = "form in forms" ng-submit="launchRobot(start_x,start_y,start_or,cmd)">
+	Input Robot Start X <input ng-model = "start_x">
+	Input Robot Start Y <input ng-model = "start_y">
+	Input Robot Start Orientation <input ng-model = "start_or">
+	Input Robot Command <input ng-model = "cmd">
+	<input type="submit" id="submit" value="Submit"/>
+
+</form>
+
+</body>
