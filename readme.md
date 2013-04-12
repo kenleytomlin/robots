@@ -4,4 +4,5 @@ Instructions
 2. install dependencies npm install -d
 3. run server with node app 8080
 4. run tests with make test
+
 Fix mistake
